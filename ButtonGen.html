@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Coloris-0.24.0/dist/coloris.min.css">
+    <title>Button Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="h1">Make your dream button today!</h1>
+        </div>
+        <div class="buttonPreview">
+            <p>This is your button. Change the parameters as you need.</p>
+        </div>
+        <div class="buttonbox">
+            <a class="yourButton" href="" id="buttonxd" title="test"></a>
+        </div>
+        <div class="settingsbox">
+            <div class="leftmenu">
+                <span class="span">Your text</span>
+                <input type="text" class="textinput" value="Enter your text" id="inputfield">
+                <span class="span">Link</span>
+                <input type="text" class="textinput" value="URL" id="inputurl">
+                <span class="span">Text color</span>
+                <input type="text" id="colorPickerInput" data-coloris>
+                <span class="span">Background color</span>
+                <input type="text" id="colorPickerInputBackground" data-coloris>
+                <span class="span">Border color</span>
+                <input type="text" id="colorPickerInputBorder" data-coloris>
+            </div>
+            <div class="rightmenu">
+                <p><span class="span" id="demo"></span></p>
+                <div class="slidecontainer">
+                    <input type="range" min="14" max="50" value="14" class="slider" id="myRange">
+                </div>
+                <p><span class="span" id="demoBorder"></span></p>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="50" value="0" class="slider" id="myRangeBorder">
+                </div>
+                <p><span class="span" id="demoBorderThickness"></span></p>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="50" value="0" class="slider" id="myRangeBorderThickness">
+                </div>
+                <p><span class="span" id="demoHeight"></span></p>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="50" value="0" class="slider" id="myRangeHeight">
+                </div>
+                <p><span class="span" id="demoWidth"></span></p>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="50" value="0" class="slider" id="myRangeWidth">
+                </div>
+            </div>
+            <div class="bottomMenu">
+                <label for="hoverCheckbox" class="span">Enable animation</label>
+                <input type="checkbox" id="hoverCheckbox">
+                <span class="span">Text color</span>
+                <input type="text" id="colorPickerInputHover" data-coloris>
+                <span class="span">Background color</span>
+                <input type="text" id="colorPickerInputBackgroundHover" data-coloris>
+                <span class="span">Border color</span>
+                <input type="text" id="colorPickerInputBorderHover" data-coloris>
+            </div>
+            <textarea class="textArea" id="cssOutput" readonly></textarea>
+
+        </div>
+        <button class="buttonCopy" id="copyButton">
+            <img src="copy-icon.svg" alt="">
+        </button>
+    </div>
+
+    <script src="input.js"></script>
+    <script src="Coloris-0.24.0/dist/coloris.min.js"></script>
+    <script src="changeEverything.js"></script>
+    <script src="displayValue.js"></script>
+</body>
+
+</html>

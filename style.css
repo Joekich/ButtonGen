@@ -1,0 +1,292 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    margin: 0 40vh;
+    text-align: center;
+}
+
+.header {
+    grid-column: span 2;
+    background-color: #005bff;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    min-width: 500px;
+}
+
+.h1 {
+    font-size: larger;
+    color: aliceblue;
+    margin: 0px;
+    padding: 2rem;
+    font-family: cursive;
+}
+
+.buttonPreview {
+    grid-column: span 2;
+    padding: 5px;
+    text-align: center;
+    font-family: cursive;
+    min-width: 500px;
+}
+
+.buttonbox {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #005bff;
+    border-radius: 15px 15px 15px 15px;
+    min-width: 500px;
+}
+
+.settingsbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-column: span 2;
+}
+
+.leftmenu,
+.rightmenu {
+    background-color: #005bff;
+    height: 275px;
+    border-radius: 15px;
+    min-width: 250px;
+    width: 100%;
+}
+
+.bottomMenu {
+    grid-column: span 2;
+    width: 100%;
+    background-color: #005bff;
+    height: 215px;
+    border-radius: 15px;
+    min-width: 250px;
+}
+
+.span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
+    color: aliceblue;
+    font-family: cursive;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.textinput {
+    display: block;
+    margin: auto;
+}
+
+.yourButton {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #005bff;
+    border-radius: 0px;
+    border: 0px solid rgb(0, 0, 0);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.yourButton.hoverEffect:hover {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #00ff40;
+    border-radius: 0px;
+    border: 0px solid rgb(0, 0, 0);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #000000;
+    cursor: pointer;
+}
+
+.textArea {
+    grid-column: span 2;
+    height: 200px;
+    resize: none;
+    width: 100%;
+}
+
+.buttonCopy {
+    height: 50px;
+    width: 50px;
+    display: block;
+}
